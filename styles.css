@@ -1,0 +1,27 @@
+/* styles.css - game page styles */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: #111;
+  color: #ddd;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+#game-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Make pixel art look crisp */
+canvas {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  /* webkit pref for some browsers */
+  image-rendering: -webkit-optimize-contrast;
+}
